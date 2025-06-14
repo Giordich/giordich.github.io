@@ -98,9 +98,23 @@ input, select, textarea {
 		box-sizing: inherit;
 	}
 
-	body {
-		background: #ffffff;
-	}
+body {
+    background-image: url("/images/town_hall_bg.jpg");
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: cover;
+    filter: blur(8px);
+    z-index: -1;
+}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
@@ -2574,6 +2588,7 @@ input, select, textarea {
 		flex-wrap: wrap;
 		postiion: relative;
 		margin: -2.5em 0 0 -2.5em;
+		padding-bottom: 3em;
 	}
 
 		.tiles article {
@@ -2706,27 +2721,27 @@ input, select, textarea {
 					}
 
 			.tiles article.style1 > .image:before {
-				background-color: #f2849e;
+				background-color: #5d5f81;
 			}
 
 			.tiles article.style2 > .image:before {
-				background-color: #7ecaf6;
+				background-color: #5673a9;
 			}
 
 			.tiles article.style3 > .image:before {
-				background-color: #7bd0c1;
+				background-color: #bc5f4d;
 			}
 
 			.tiles article.style4 > .image:before {
-				background-color: #c75b9b;
+				background-color: #808e3c;
 			}
 
 			.tiles article.style5 > .image:before {
-				background-color: #ae85ca;
+				background-color: #7f694a;
 			}
 
 			.tiles article.style6 > .image:before {
-				background-color: #8499e7;
+				background-color: #635146;
 			}
 
 			body:not(.is-touch) .tiles article:hover > .image {
@@ -3318,6 +3333,8 @@ input, select, textarea {
 		max-width: 68em;
 		margin: 0 auto;
 		padding: 0 2.5em;
+		background-color: #f6f6f6;
+		
 	}
 
 		@media screen and (max-width: 736px) {
