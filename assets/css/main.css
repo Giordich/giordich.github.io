@@ -3332,6 +3332,12 @@ body::before {
 
 		}
 
+/*Custom*/
+
+.right {
+	float: right;
+}
+
 /* Wrapper */
 
 	#wrapper > * > .inner {
