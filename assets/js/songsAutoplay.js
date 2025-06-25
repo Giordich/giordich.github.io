@@ -10,13 +10,13 @@ function nextSong(e) {
 
     if (end <= now) {
         
-    const position = songs.indexOf(this);
+        const position = songs.indexOf(this);
 
-    if (position === songs.length - 1) {
-        songs[0].play();
+        if (position === songs.length - 1) {
+            songs[0].play();
 
-    } else {
-        songs[position + 1].play();
+        } else {
+            songs[position + 1].play();
+        }
     }
-}
 }
