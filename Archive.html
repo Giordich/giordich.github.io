@@ -31,39 +31,22 @@ body {
   display: flex;
   -ms-flex-wrap: wrap; /* IE 10 */
   flex-wrap: wrap;
-  padding: 0 4px;
+  padding: 0 10px;
 }
 
 /* Create two equal columns that sits next to each other */
 .column {
   -ms-flex: 50%; /* IE 10 */
   flex: 50%;
-  padding: 0 4px;
+  padding: 0 10px;
 }
 
 .column img {
-  margin-top: 8px;
+  margin-top: 16px;
   vertical-align: middle;
 }
 
 /* Style the buttons */
-.btn {
-  border: none;
-  outline: none;
-  padding: 10px 16px;
-  background-color: #f1f1f1;
-  cursor: pointer;
-  font-size: 18px;
-}
-
-.btn:hover {
-  background-color: #ddd;
-}
-
-.btn.active {
-  background-color: #666;
-  color: white;
-}
 </style>
 	</head>
 	<body class="is-preload">
@@ -77,42 +60,66 @@ body {
 									<a href="index.html" class="logo">
 									<span class="symbol"><img src="images/piano.png" alt="" /></span><span class="title">Paulina Ruvinska's Concerts</span>
 								</a></header>
+
 							<div class="row"> 
   								<div class="column">
-    								<img src="/w3images/wedding.jpg" style="width:100%">
-    								<img src="/w3images/rocks.jpg" style="width:100%">
-    								<img src="/w3images/falls2.jpg" style="width:100%">
-    								<img src="/w3images/paris.jpg" style="width:100%">
-    								<img src="/w3images/nature.jpg" style="width:100%">
-    								<img src="/w3images/mist.jpg" style="width:100%">
-    								<img src="/w3images/paris.jpg" style="width:100%">
+    								<img src="/images/Archives/1926 Toledo Topics.jpg" style="width:100%" class="enImage1" onclick="enlargeImg()">
+									<img src="/images/Archives//1931 Detroit A.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1931 Detroit B.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1932 radio broadcast.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1935 Daily Mirror, Nov 4, 1935.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1935 New York  debut A.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1935 New York debut B.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1935 New York debut C.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1936, Toledo New- Bee, February 1936.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1937 Marion Star, March 10, 1937.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1938 Hartford_ CT.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1938 Marion Civic Orchesta dir Abram Ruvinsky.jpg" style="width:100%" class="enImage">
   								</div>
   								<div class="column">
-    								<img src="/w3images/underwater.jpg" style="width:100%">
-    								<img src="/w3images/ocean.jpg" style="width:100%">
-    								<img src="/w3images/wedding.jpg" style="width:100%">
-    								<img src="/w3images/mountainskies.jpg" style="width:100%">
-    								<img src="/w3images/rocks.jpg" style="width:100%">
-    								<img src="/w3images/underwater.jpg" style="width:100%">
+    								<img src="/images/Archives/1938 Toledo Morning Times, February 19, 1938.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1938 Toledo Museum of Art.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1938 Town Hall A.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1938 Town Hall B.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1939 Town Hall A.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1939 Town Hall B.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1941 Town Hall A.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1941 Town Hall C.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1941 Town Hall D.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1941 Town Hll B.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1945 Town Hall A.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1945 Town Hall B.jpg" style="width:100%" class="enImage">
   								</div>  
   								<div class="column">
-    								<img src="/w3images/wedding.jpg" style="width:100%">
-    								<img src="/w3images/rocks.jpg" style="width:100%">
-    								<img src="/w3images/falls2.jpg" style="width:100%">
-    								<img src="/w3images/paris.jpg" style="width:100%">
-    								<img src="/w3images/nature.jpg" style="width:100%">
-    								<img src="/w3images/mist.jpg" style="width:100%">
-    								<img src="/w3images/paris.jpg" style="width:100%">
+									<img src="/images/Archives/1955 Town Hall A.jpg" style="width:100%" class="enImage">
+    								<img src="/images/Archives/1955 Town Hall B.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1956 Carnegie Recital Hall.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1956 Lotos Club, New York City.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1958 Carnegie Recital Hall.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1960 Carnegie Recital Hall with George Koutzen.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1960 Town Hall A.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1960 Town Hall B.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1964 Town Hall A.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1964 Town Hall B.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1965 Salzburg recital program A.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1965 Salzburg recital program B.jpg" style="width:100%" class="enImage">
+
   								</div>
   								<div class="column">
-    								<img src="/w3images/underwater.jpg" style="width:100%">
-    								<img src="/w3images/ocean.jpg" style="width:100%">
-    								<img src="/w3images/wedding.jpg" style="width:100%">
-    								<img src="/w3images/mountainskies.jpg" style="width:100%">
-    								<img src="/w3images/rocks.jpg" style="width:100%">
-    								<img src="/w3images/underwater.jpg" style="width:100%">
+									<img src="/images/Archives/1965 Salzburg with orchestra.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1966 Town Hall A.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1966 Town Hall B.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1978 Carnegie Recital Hall  A.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1978 Carnegie Recital Hall B.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1984 recital with Anni Baker.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1985 West Kortright Center B.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1985 West Kortright Center A.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1985 West Kortright Center B.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1990 West Kortright Center.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1993 Hewlett-Woodmere Library.jpg" style="width:100%" class="enImage">
   								</div>
 							</div>
+
 							<br>
 							<p></p>
 							<p></p>
@@ -128,7 +135,7 @@ body {
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script>
+<script>
 // Get the elements with class="column"
 var elements = document.getElementsByClassName("column");
 
@@ -141,6 +148,7 @@ var i;
     elements[i].style.msFlex = "25%";  // IE10
     elements[i].style.flex = "25%";
   }
+  
 
 
 // Add active class to the current button (highlight it)
@@ -153,7 +161,9 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+
 </script>
 
-	</body>
+</body>
 </html>

@@ -3337,6 +3337,19 @@ body::before {
 .right {
 	float: right;
 }
+#fullpage {
+  display: none;
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+  background-color: black;
+}
 
 /* Wrapper */
 
@@ -3348,6 +3361,16 @@ body::before {
 		background-color: #f6f6f6;
 		
 	}
+		#wrapper > * > .innerArchive {
+		width: 100%;
+		max-width: 68em;
+		margin: 0 auto;
+		padding: 0 2.5em;
+		background-color: #4d4d4d;
+		
+	}
+
+	
 
 		@media screen and (max-width: 736px) {
 
