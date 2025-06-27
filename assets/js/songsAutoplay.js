@@ -13,7 +13,7 @@ function nextSong(e) {
         const position = songs.indexOf(this);
 
         if (position === songs.length - 1) {
-            songs[0].play();
+            return;
 
         } else {
             songs[position + 1].play();

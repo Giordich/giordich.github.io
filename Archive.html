@@ -49,6 +49,28 @@ body {
 /* Style the buttons */
 </style>
 	</head>
+
+	<script>
+
+		var images = document.getElementsByClassName("enImage");
+		
+
+		function setOverlayImage(src) {
+			var overlayImage = document.getElementsByClassName("overlayImage")[0];
+			overlayImage.src = src;
+			overlayImage.style.display = "block";
+
+		}
+
+		//on esc pressed, hide the overlay image
+		document.addEventListener("keydown", function(event) {
+			if (event.key === "Escape") {
+				var overlayImage = document.getElementsByClassName("overlayImage")[0];
+				overlayImage.style.display = "none";
+			}
+		});
+
+	</script>
 	<body class="is-preload">
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -56,6 +78,7 @@ body {
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
+								<img src="" style="width:100%" class="overlayImage">
 								<header id="header">			
 									<a href="index.html" class="logo">
 									<span class="symbol"><img src="images/piano.png" alt="" /></span><span class="title">Paulina Ruvinska's Concerts</span>
@@ -63,60 +86,60 @@ body {
 
 							<div class="row"> 
   								<div class="column">
-    								<img src="/images/Archives/1926 Toledo Topics.jpg" style="width:100%" class="enImage1" onclick="enlargeImg()">
-									<img src="/images/Archives//1931 Detroit A.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1931 Detroit B.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1932 radio broadcast.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1935 Daily Mirror, Nov 4, 1935.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1935 New York  debut A.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1935 New York debut B.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1935 New York debut C.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1936, Toledo New- Bee, February 1936.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1937 Marion Star, March 10, 1937.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1938 Hartford_ CT.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1938 Marion Civic Orchesta dir Abram Ruvinsky.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1926 Toledo Topics.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives//1931 Detroit A.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives/1931 Detroit B.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives/1932 radio broadcast.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives/1935 Daily Mirror, Nov 4, 1935.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives/1935 New York  debut A.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives/1935 New York debut B.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives/1935 New York debut C.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives/1936, Toledo New- Bee, February 1936.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives/1937 Marion Star, March 10, 1937.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives/1938 Hartford_ CT.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives/1938 Marion Civic Orchesta dir Abram Ruvinsky.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
   								</div>
   								<div class="column">
-    								<img src="/images/Archives/1938 Toledo Morning Times, February 19, 1938.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1938 Toledo Museum of Art.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1938 Town Hall A.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1938 Town Hall B.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1939 Town Hall A.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1939 Town Hall B.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1941 Town Hall A.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1941 Town Hall C.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1941 Town Hall D.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1941 Town Hll B.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1945 Town Hall A.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1945 Town Hall B.jpg" style="width:100%" class="enImage">
+    								<img src="/images/Archives/1938 Toledo Morning Times, February 19, 1938.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives/1938 Toledo Museum of Art.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives/1938 Town Hall A.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives/1938 Town Hall B.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives/1939 Town Hall A.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives/1939 Town Hall B.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives/1941 Town Hall A.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives/1941 Town Hall C.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives/1941 Town Hall D.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives/1941 Town Hll B.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives/1945 Town Hall A.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives/1945 Town Hall B.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
   								</div>  
   								<div class="column">
-									<img src="/images/Archives/1955 Town Hall A.jpg" style="width:100%" class="enImage">
-    								<img src="/images/Archives/1955 Town Hall B.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1956 Carnegie Recital Hall.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1956 Lotos Club, New York City.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1958 Carnegie Recital Hall.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1960 Carnegie Recital Hall with George Koutzen.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1960 Town Hall A.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1960 Town Hall B.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1964 Town Hall A.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1964 Town Hall B.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1965 Salzburg recital program A.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1965 Salzburg recital program B.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1955 Town Hall A.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+    								<img src="/images/Archives/1955 Town Hall B.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives/1956 Carnegie Recital Hall.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives/1956 Lotos Club, New York City.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives/1958 Carnegie Recital Hall.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives/1960 Carnegie Recital Hall with George Koutzen.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives/1960 Town Hall A.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives/1960 Town Hall B.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives/1964 Town Hall A.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives/1964 Town Hall B.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives/1965 Salzburg recital program A.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);"> 
+									<img src="/images/Archives/1965 Salzburg recital program B.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
 
   								</div>
   								<div class="column">
-									<img src="/images/Archives/1965 Salzburg with orchestra.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1966 Town Hall A.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1966 Town Hall B.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1978 Carnegie Recital Hall  A.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1978 Carnegie Recital Hall B.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1984 recital with Anni Baker.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1985 West Kortright Center B.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1985 West Kortright Center A.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1985 West Kortright Center B.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1990 West Kortright Center.jpg" style="width:100%" class="enImage">
-									<img src="/images/Archives/1993 Hewlett-Woodmere Library.jpg" style="width:100%" class="enImage">
+									<img src="/images/Archives/1965 Salzburg with orchestra.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives/1966 Town Hall A.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives/1966 Town Hall B.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives/1978 Carnegie Recital Hall  A.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives/1978 Carnegie Recital Hall B.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives/1984 recital with Anni Baker.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives/1985 West Kortright Center B.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives/1985 West Kortright Center A.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives/1985 West Kortright Center B.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives/1990 West Kortright Center.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
+									<img src="/images/Archives/1993 Hewlett-Woodmere Library.jpg" style="width:100%" class="enImage" onclick="setOverlayImage(this.src);">
   								</div>
 							</div>
 
@@ -160,6 +183,14 @@ for (var i = 0; i < btns.length; i++) {
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
   });
+}
+
+
+
+
+
+function alertImage(){
+	alert("test");
 }
 
 
